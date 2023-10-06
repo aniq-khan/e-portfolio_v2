@@ -16,8 +16,6 @@ import { fetchProjects } from "../utils/fetchProjects";
 import { fetchPageInfo } from "../utils/fetchPageInfo";
 import { fetchSocials } from "../utils/fetchSocials";
 
-
-
 type Props = {
   pageInfo: PageInfo;
   experiences: Experience[];
@@ -43,7 +41,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       <Header socials={socials} />
 
       <section id="hero" className="snap-start">
-        <Hero pageInfo={pageInfo}/>
+        <Hero pageInfo={pageInfo} />
       </section>
 
       <section id="about" className="snap-center">
@@ -71,7 +69,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <div>
             <Image
               alt="123"
-              className="rounded-full  filter grayscale hover:grayscale-0"
+              className="rounded-full  filter grayscale hover:grayscale-0 animate-bounce"
               width={48}
               height={48}
               src="https://cdn.sanity.io/images/tfdxk22h/production/c19af28409dee6940cc75aac638918acf0e434c0-278x200.jpg"
