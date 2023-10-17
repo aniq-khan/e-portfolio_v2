@@ -9,7 +9,7 @@ export default defineConfig({
   projectId: 'tfdxk22h',
   dataset: 'production',
 
-  plugins: [deskTool(), visionTool()],
+  plugins: [deskTool()],
 
   schema: {
     types: schemaTypes,
