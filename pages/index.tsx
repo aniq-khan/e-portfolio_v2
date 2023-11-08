@@ -69,7 +69,7 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
           <div>
             <Image
               alt="123"
-              className="rounded-full  filter grayscale hover:grayscale-0 animate-bounce"
+              className="rounded-full filter grayscale hover:grayscale-0 animate-bounce"
               width={48}
               height={48}
               src="https://cdn.sanity.io/images/tfdxk22h/production/c19af28409dee6940cc75aac638918acf0e434c0-278x200.jpg"
