@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { PageInfo } from "../typings";
 import { urlFor } from "../sanity";
+type Props = {
+  pageInfo: PageInfo;
+};
 
-function About() {
+function About({ pageInfo }: Props) {
   return (
     <motion.div
       initial={{
@@ -33,8 +36,7 @@ function About() {
         transition={{
           duration: 1.2,
         }}
-        src={""}
-        alt="test"
+        src={urlFor(pageInfo?.profilePic).url()}
         className="mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-[20rem] md:h-96 lg:w-[350px] lg:h-[450px]"
       />
 
@@ -44,7 +46,7 @@ function About() {
           <span className="underline decoration-[#F7AB0A]">little</span>{" "}
           background<span className="text-[#F7AB0A]">.</span>
         </h4>
-        <p className="text-base lg:text-xl">{"test"}</p>
+        <p className="text-base lg:text-xl">{pageInfo.backgroundInformation}</p>
       </div>
     </motion.div>
   );
