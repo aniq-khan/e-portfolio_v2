@@ -24,7 +24,7 @@ type Props = {
   socials: Social[];
 };
 
-const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
+const Home = ({ experiences, projects, skills, socials }: Props) => {
   return (
     <div
       className="
@@ -41,11 +41,11 @@ const Home = ({ pageInfo, experiences, projects, skills, socials }: Props) => {
       <Header socials={socials} />
 
       <section id="hero" className="snap-start">
-        <Hero pageInfo={pageInfo} />
+        <Hero />
       </section>
 
       <section id="about" className="snap-center">
-        <About pageInfo={pageInfo} />
+        <About />
       </section>
 
       <section id="experience" className="snap-center">
