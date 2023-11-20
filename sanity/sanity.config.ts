@@ -12,7 +12,7 @@ export default defineConfig({
   plugins: [deskTool()],
 
   apiVersion: '2021-06-07',
-
+  https://<projectId>.api.sanity.io/v<YYYY-MM-DD>/<path>
   schema: {
     types: schemaTypes,
   },
