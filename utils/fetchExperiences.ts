@@ -1,12 +1,15 @@
+import { sanityClient } from "../sanity";
 import { Experience } from "../typings";
 
 export const fetchExperiences = async () => {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_BASE_URL}/api/getExperience`
-  );
+  const res = await sanityClient.fetch(`
+  *[_type == "experience"]{
+    ...,
+      technologies[]->
+  }
+  `)
 
-  const data = await res.json();
-  const experiences: Experience[] = data.experiences;
+  const experiences: Experience[] = res;
 
   return experiences;
 };
