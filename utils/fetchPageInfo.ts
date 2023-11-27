@@ -1,10 +1,11 @@
+import { sanityClient } from "../sanity";
 import { PageInfo } from "../typings";
 
 export const fetchPageInfo = async() => {
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/getPageInfo`)
-
-    const data = await res.json()
-    const pageInfo: PageInfo = data.pageInfo;
+    const res = await sanityClient.fetch(`
+    *[_type == "pageInfo"][0]
+    `)
+    const pageInfo: PageInfo = res;
 
     return pageInfo;
 }
