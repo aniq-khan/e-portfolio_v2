@@ -49,7 +49,7 @@ function Projects({ projects }: Props) {
                 y: 0,
               }}
               viewport={{ once: true }}
-              src={urlFor(project.image).url()}
+              src={urlFor(project.image).url() || ""}
               alt=""
               width={480}
               height={300}
@@ -67,7 +67,7 @@ function Projects({ projects }: Props) {
                     alt=""
                     width={64}
                     height={64}
-                    src={urlFor(technology.image).url()}
+                    src={urlFor(technology.image).url() || ""}
                   />
                 ))}
               </div>

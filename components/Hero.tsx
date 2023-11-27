@@ -21,7 +21,7 @@ function Hero({ pageInfo }: Props) {
       <BackgroundCircles />
       <Image
         className="relative rounded-full h-32 w-32 mx-auto object-cover"
-        src={urlFor(pageInfo?.heroImage).url()}
+        src={urlFor(pageInfo?.heroImage).url() || ""}
         width={500}
         height={500}
         alt="Picture of the author"

@@ -31,7 +31,7 @@ function ExperienceCard({ experience }: Props) {
           once: true,
         }}
         className="w-32 h-32 rounded-full md:rounded-full xl:w-[100px] xl:h-[100px] object-cover object-center "
-        src={urlFor(experience?.companyImage).url()}
+        src={urlFor(experience?.companyImage).url() || ""}
         alt=""
       />
 
