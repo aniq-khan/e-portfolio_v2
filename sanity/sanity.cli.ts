@@ -5,4 +5,8 @@ export default defineCliConfig({
     projectId: 'tfdxk22h',
     dataset: 'production',
   },
+  server: {
+    hostname: 'localhost',
+    port: 3333,
+  },
 })
