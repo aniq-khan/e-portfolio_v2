@@ -37,7 +37,7 @@ function About({ pageInfo }: Props) {
           duration: 1.2,
         }}
         src={urlFor(pageInfo?.profilePic).url()}
-        className="mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-[20rem] md:h-96 lg:w-[350px] lg:h-[450px]"
+        className="mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-[450px] md:h-[250px] lg:w-[650px] lg:h-[450px]"
       />
 
       <div className="space-y-10 px-0 md:px-10">
